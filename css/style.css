@@ -26,6 +26,11 @@ body {
     /* background-repeat:no-repeat, no-repeat; */
     /* background-position: -55% 170%, 155% -80%; */
     /* background-position:-270px -590px, 700px 300px; */
+    background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+    background-position-x: -100%, 200%;
+    background-position-y: 85%, -60%;
+    background-repeat: no-repeat, no-repeat;
     text-align: center;
     overflow: hidden;
 }
@@ -47,7 +52,7 @@ body::before {
     left: 0;
 }
 
-2body::after {
+body::after {
     z-index: -1;
     background: url("images/bg-pattern-bottom.svg") no-repeat top left;
     top: 100%;
